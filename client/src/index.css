@@ -8,7 +8,7 @@
   background-color: #e9d0e9;
 }
 
-.home__container {
+.home_container {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -17,21 +17,21 @@
   align-items: center;
 }
 
-.home__container>* {
+.home_container>* {
   margin-bottom: 10px;
 }
 
-.home__header {
+.home_header {
   margin-bottom: 30px;
 }
 
-.username__input {
+.username_input {
   padding: 5px;
   width: 30%;
   border: double;
 }
 
-.home__cta {
+.home_cta {
   width: 200px;
   padding: 10px;
   font-size: 16px;
@@ -50,7 +50,7 @@
   align-items: center;
 }
 
-.chat__sidebar {
+.chat_sidebar {
   height: 100%;
   background-color: #e9d0e9;
   flex: 0.2;
@@ -58,29 +58,29 @@
   border-right: 1px solid #fdfdfd;
 }
 
-.chat__main {
+.chat_main {
   height: 100%;
   flex: 0.8;
 }
 
-.chat__header {
+.chat_header {
   margin: 20px 0 15px 0;
 }
 
-.chat__users>* {
+.chat_users>* {
   margin-bottom: 5px;
   color: #54169b;
   font-size: 14px;
   font-weight: bold;
 }
 
-.online__users>* {
+.online_users>* {
   margin-bottom: 10px;
   color: rgb(238, 102, 102);
   font-style: italic;
 }
 
-.chat__mainHeader {
+.chat_mainHeader {
   width: 100%;
   height: 10vh;
   display: flex;
@@ -90,7 +90,7 @@
   background-color: #e9d0e9;
 }
 
-.leaveChat__btn {
+.leaveChat_btn {
   padding: 10px;
   width: 120px;
   border: solid;
@@ -102,11 +102,11 @@
   color: black;
 }
 
-.leaveChat__btn:hover {
+.leaveChat_btn:hover {
   background-color: #e49797;
 }
 
-.message__container {
+.message_container {
   width: 100%;
   height: 80vh;
   background-color: #f5e8f5;
@@ -114,12 +114,12 @@
   overflow-y: scroll;
 }
 
-.message__container>* {
+.message_container>* {
   margin-bottom: 10px;
   background-color: #f5e8f5;
 }
 
-.chat__footer {
+.chat_footer {
   padding: 10px;
   background-color: #e9d0e9;
   height: 10vh;
@@ -158,7 +158,7 @@
   background-color: rgb(129, 201, 129);
 }
 
-.message__recipient {
+.message_recipient {
   background-color: #f1b6b6;
   max-width: 350px;
   padding: 8px;
@@ -166,12 +166,12 @@
   font-size: 15px;
 }
 
-.message__recipient>p {
+.message_recipient>p {
   color-scheme: #f1b6b6;
   background-color: #f1b6b6;
 }
 
-.message__sender {
+.message_sender {
   background-color: rgb(156, 243, 156);
   max-width: 350px;
   padding: 8px;
@@ -180,30 +180,30 @@
   font-size: 15px;
 }
 
-.message__sender>p {
+.message_sender>p {
   color-scheme: rgb(156, 243, 156);
   background-color: rgb(156, 243, 156);
 }
 
-.message__chats>p {
+.message_chats>p {
   font-size: 10px;
   color-scheme: #f5e8f5;
   background-color: #f5e8f5;
 }
 
-.sender__name {
+.sender_name {
   text-align: right;
   color-scheme: #f5e8f5;
   background-color: #f5e8f5;
 }
 
-.message__status {
+.message_status {
   position: fixed;
   bottom: 60px;
   font-size: 13px;
   font-style: italic;
 }
 
-.message__status>p {
+.message_status>p {
   background-color: #f5e8f5;
 }
