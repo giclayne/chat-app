@@ -14,6 +14,9 @@ app.use(cors())
 
 socketIO.on('connection', (socket)=>{
     console.log(`${socket.id} a user connected`);
+    socket.on('message', (data) => {
+        socketIO.emit('messageResponse', data);
+    });
     socket.on('disconnect', ()=>{
         console.log(`${socket.id} a user disconnected`);
     })
