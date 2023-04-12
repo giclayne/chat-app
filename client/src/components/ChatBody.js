@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const ChatBody = (messages) => {
+const ChatBody = ({messages, lastMessageRef}) => {
     const navigate = useNavigate();
 
     const handleLeaveChat = () => {
@@ -39,6 +39,7 @@ const ChatBody = (messages) => {
                 <div className="message__status">
                     <p>Alguém está digitando...</p>
                 </div>
+                <div ref={lastMessageRef} />
             </div>
         </>
     );
