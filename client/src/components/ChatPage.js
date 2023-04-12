@@ -6,7 +6,7 @@ import ChatFooter from "./ChatFooter";
 const ChatPage = ({ socket }) => {
     const [messages, setMessages] = useState([]);
     const lastMessageRef = useRef(null);
-  
+    const [typingStatus, setTypingStatus] = useState('');
   
     useEffect(() => {
         socket.on('messageResponse', (data) => setMessages([...messages, data]));
@@ -16,13 +16,18 @@ const ChatPage = ({ socket }) => {
         lastMessageRef.current.scrollIntoView({ behavior: 'smooth' });
       }, [messages]);
     
+    useEffect(() => {
+    socket.on('typingResponse', (data) => setTypingStatus(data));
+    }, [socket]);
+
     return (
         <div className="chat">
             <ChatBar socket={socket} />
             <div className="chat__main">
                 <ChatBody 
                     messages={messages}
-                    lastMessageRef={lastMessageRef} />
+                    lastMessageRef={lastMessageRef}
+                    typingStatus={typingStatus} />
                 <ChatFooter socket={socket} />
             </div>
         </div>
