@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const ChatBody = ({messages, lastMessageRef, typingStatus}) => {
+const ChatBody = ({ messages, lastMessageRef, typingStatus }) => {
     const navigate = useNavigate();
 
     const handleLeaveChat = () => {
@@ -12,31 +12,31 @@ const ChatBody = ({messages, lastMessageRef, typingStatus}) => {
 
     return (
         <>
-            <header className="chat__mainHeader">
+            <header className="chat_mainHeader">
                 <p>Converse com seus amigos</p>
-                <button className="leaveChat__btn" onClick={handleLeaveChat}>
+                <button className="leavechat_btn" onClick={handleLeaveChat}>
                     SAIR DO CHAT
                 </button>
             </header>
 
-            <div className="message__container">
-                {messages.map ((message)=>
+            <div className="message_container">
+                {messages.map((message) =>
                     message.name === localStorage.getItem('userName') ? (
-                        <div className="message__chats" key={message.id}>
-                            <p className="sender__name">Você</p>
-                            <div className="message__sender">
+                        <div className="message_chats" key={message.id}>
+                            <p className="sender_name">Você</p>
+                            <div className="message_sender">
                                 <p>{message.text}</p>
                             </div>
                         </div>
-                    ): (
-                        <div className="message__chats" key={message.id}>
+                    ) : (
+                        <div className="message_chats" key={message.id}>
                             <p>{message.name}</p>
-                            <div className="message__recipient">
+                            <div className="message_recipient">
                                 <p>{message.text}</p>
                             </div>
                         </div>
-                    ))}                            
-                <div className="message__status">
+                    ))}
+                <div className="message_status">
                     <p>{typingStatus}</p>
                 </div>
                 <div ref={lastMessageRef} />
