@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const ChatBody = ({ messages, lastMessageRef, typingStatus }) => {
+const ChatBody = ({messages, lastMessageRef, typingStatus}) => {
 
     const navigate = useNavigate();
 
@@ -19,26 +19,27 @@ const ChatBody = ({ messages, lastMessageRef, typingStatus }) => {
                     SAIR DO CHAT
                 </button>
             </header>
-            <div className="message_container">
-                {messages.map((message) =>
+            <div className="message__container">
+                {messages.map ((message)=>
                     message.name === localStorage.getItem('userName') ? (
-                        <div className="message_chats" key={message.id}>
-                            <p className="sender_name">Você</p>
-                            <div className="message_sender">
+                        <div className="message__chats" key={message.id}>
+                            <p className="sender__name">Você</p>
+                            <div className="message__sender">
                                 <p>{message.text}</p>
                             </div>
                         </div>
-                    ) : (
-                        <div className="message_chats" key={message.id}>
+                    ): (
+                        <div className="message__chats" key={message.id}>
                             <p>{message.name}</p>
-                            <div className="message_recipient">
+                            <div className="message__recipient">
                                 <p>{message.text}</p>
                             </div>
                         </div>
-                    ))}
-                <div className="message_status">
+                    ))}                            
+                <div className="message__status">
                     <p>{typingStatus}</p>
                 </div>
+                <div ref={lastMessageRef} />
             </div>
         </>
     );
