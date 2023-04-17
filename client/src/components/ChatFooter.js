@@ -20,7 +20,7 @@ const ChatFooter = ({socket}) => {
         setMessage('');
       };
     return (
-        <div className="chat__footer">
+        <div className="chat_footer">
             <form className="form" onSubmit={handleSendMessage}>
                 <input
                     type="text"
