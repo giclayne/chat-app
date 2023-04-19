@@ -6,8 +6,7 @@
 O projeto é referente a 2ª Verificação de Aprendizagem da disciplina de Redes de Computadores ministrada pela Professora Drª Kádna Camboim, da UFAPE, no período 2022.1. 
 
 ## :pencil: Descrição
-O projeto consiste em um chat em rede local que permite que os usuários possam se comunicar em tempo real dentro de uma rede local. A aplicação terá uma interface gráfica simples que mostra os usuários conectados, a janela de chat e a opção de enviar mensagens. A aplicação deve permitir que os usuários se conectem ao chat usando seus próprios nomes de usuário. As mensagens enviadas por um usuário devem ser exibidas para todos os outros usuários do chat e um sistema de login e autenticação
-garantir que apenas usuários autorizados possam acessar o chat.
+O projeto consiste em um chat em rede local que permite que os usuários possam se comunicar em tempo real dentro de uma rede local. A aplicação terá uma interface gráfica simples que mostra os usuários conectados, a janela de chat e a opção de enviar mensagens. A aplicação deve permitir que os usuários se conectem ao chat usando seus próprios nomes de usuário. As mensagens enviadas por um usuário devem ser exibidas para todos os outros usuários do chat.
 
 ## :pushpin: Objetivos
 O objetivo do projeto de chat em rede local é aprender sobre programação de redes e desenvolvimento de aplicativos em tempo real. Alguns dos objetivos específicos incluem:
